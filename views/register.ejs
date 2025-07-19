@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <form action="/register" method="POST">
+    <h2 style="text-align:center; margin-bottom: 1rem;">Create Your Account</h2>
+
+    <input type="text" name="name" placeholder="Name" required />
+
+    <input type="email" name="email" placeholder="Email" required />
+
+    <input type="password" name="password" placeholder="Password" id="pass" required />
+
+    <label>
+      <input type="checkbox" onclick="document.getElementById('pass').type = this.checked ? 'text' : 'password'">
+      Show Password
+    </label>
+
+    <button type="submit">Register</button>
+
+    <p style="text-align:center; margin-top: 1rem;">
+      Already have an account? <a href="/login" style="color: #00f; text-decoration: underline;">Login</a>
+    </p>
+  </form>
+</body>
+</html>

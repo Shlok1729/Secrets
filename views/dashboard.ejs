@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<div class="container text-center text-white mt-5">
+  <h1>Hello, <%= user.name %> 👋</h1>
+  <p>Welcome to your private dashboard.</p>
+  <p>Your email: <strong><%= user.email %></strong></p>
+
+  <!-- Add Secret and View Secrets Buttons -->
+  <div class="mt-4">
+    <a href="/submit" class="btn btn-success btn-lg m-2">➕ Add Secret</a>
+    <a href="/secrets" class="btn btn-primary btn-lg m-2">🔐 View All Secrets</a>
+  </div>
+
+  <!-- Logout Button -->
+  <div class="mt-4">
+    <a href="/logout" class="btn btn-danger btn-lg">Logout</a>
+  </div>
+</div>
+
+<%- include("partials/footer") %>

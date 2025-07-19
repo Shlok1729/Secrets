@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+<div class="container mt-5 text-white">
+  <h2>Submit a Secret</h2>
+  <form action="/submit" method="POST">
+    <div class="mb-3">
+      <textarea name="secret" class="form-control" rows="5" required placeholder="Enter your secret..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Submit Secret</button>
+  </form>
+
+  <a href="/dashboard" class="btn btn-secondary mt-4">⬅ Back to Dashboard</a>
+</div>
+
+<%- include("partials/footer") %>
